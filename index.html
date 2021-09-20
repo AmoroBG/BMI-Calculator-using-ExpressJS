@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple BMI Calculator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #eee;
+            font-size: 1rem;
+        }
+        
+        .container {
+            width: 75%;
+            margin: auto;
+            text-align: center;
+            background-color: aqua;
+        }
+        
+        .header {
+            background-color: tomato;
+            color: white;
+            text-transform: capitalize;
+            padding: 1rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        
+        .calculator {
+            margin: 1rem 0;
+            padding: 2rem;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: auto;
+            padding: 2rem;
+        }
+        
+        input,
+        button {
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+        
+        input:hover,
+        button:hover {
+            background-color: tomato;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        button {
+            background-color: thistle;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        
+        .footer {
+            background-color: tomato;
+            color: white;
+            padding: 1rem;
+            font-size: 0.8rem;
+            text-align: center;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">Simple BMI Calculator using ExpressJS</header>
+    <div class="container">
+        <form action="/" method="POST">
+            <input type="text" name="weight" placeholder="Weight ...">
+            <input type="text" name="height" placeholder="Height ...">
+            <button type="submit">Calculate BMI</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>Simple BMI Calculator using ExpressJS - &copy; September, 2021</p>
+    </footer>
+</body>
+
+</html>
