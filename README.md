@@ -1,0 +1,1 @@
+This is a simple BMI (Body Mass Index) calculator using ExpressJS 
